@@ -15,7 +15,7 @@ It is designed to provide better inter-linking between the main Dronecore websit
 Simply zip up the **dronecode-salient-child** folder. The **dronecode-salient-child.zip** can then be uploaded and activated on 
 a wordpress installation that already has Salient installed. 
 
-Currently this adds logo images
+Currently this adds logo images. The HTML changes are [here](https://github.com/Dronecode/dronecode-wordpress-theme/blob/master/dronecode-salient-child/header.php#L146-L171) (search for `common_dronecode_menu` in header.php)
 
 ## Known issues
 
