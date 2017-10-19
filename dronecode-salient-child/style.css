@@ -1,0 +1,62 @@
+/*
+Theme Name: Dronecode Salient Child Theme
+Theme URI: https://www.dronecode.org/
+Description: This is a Salient custom child theme that adds a Dronecode header
+Author: Hamish Willee
+Author URI: https://www.linkedin.com/in/hamishwillee/
+Template: salient
+Version: 0.9
+*/
+
+
+/* New menu bar 24px high at top of page.*/
+#common_dronecode_menu{position:fixed; /*height:24px;*/ top:0px; left:0px; width:100%; z-index:9999; background-color:black; margin: 0 auto; padding-top; font-size:14px;}
+
+.admin-bar #common_dronecode_menu, .logged-in.buddypress #common_dronecode_menu{top:32px}
+.admin-bar #common_dronecode_menu[data-permanent-transparent="1"], .logged-in.buddypress #common_dronecode_menu[data-permanent-transparent="1"]{top:32px}
+
+.common_menu_logo{float:left; padding-left:5px; padding-top:1px;}
+.common_menu_logo img {max-height:18px;} /*Would like to control max height, but seems to be controlled by javascript */
+
+.common_menu_options{float:right;}
+.common_dronecode_menu_item{float:left; padding-right:20px;}
+body .common_menu_options a{color:lightgrey;}
+
+/* Make text small as screen compresses */
+
+
+
+@media only screen and (max-width:1001px){
+    #menu_dc {display:none;}
+}
+
+@media only screen and (min-width:800px){
+    .common_dronecode_menu_item.large_version {display:inline;} 
+    .common_dronecode_menu_item.small_version {display:none;}
+    .common_menu_logo.large_version {display:inline;}
+    .common_menu_logo.small_version {display:none;}
+    
+}
+
+@media only screen and (max-width:800px){
+    .common_dronecode_menu_item.large_version {display:none;}
+    .common_dronecode_menu_item.small-text {display:inline;}
+    .common_menu_logo.large_version {display:none;}
+    .common_menu_logo.small_version {display:inline;}
+}
+
+@media only screen and (max-width:600px){
+    .common_dronecode_menu_item{padding-right:10px;} /* Shrink menu padding */
+}
+
+/* Push old menu bar 40px down page. */
+
+/* Top of original header pushed down to fit new menu, when not logged in. */
+#header-outer{top:24px} 
+
+/* Total of new header + old header - 24 + 90. */
+#header-space{height:114px}  
+
+/* Top of original header pushed down to fit new menu when logged in. */
+.admin-bar #header-outer, .logged-in.buddypress #header-outer{top:56px !important} /*32px shifted by height of new menu 24 */
+.admin-bar #header-outer[data-permanent-transparent="1"], .logged-in.buddypress #header-outer[data-permanent-transparent="1"]{top:56px !important}
