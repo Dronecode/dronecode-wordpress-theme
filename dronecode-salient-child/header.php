@@ -161,7 +161,7 @@ if($using_secondary == 'header_with_secondary') { ?>
     <div class="common_dronecode_menu_item small_version"><a href="http://qgroundcontrol.com/">QGC</a></div>
     <div class="common_dronecode_menu_item"><a href="http://dronecore.io/">DroneCore</a></div>
     <!-- <div class="common_dronecode_menu_item small_version"><a href="http://dronecore.io/">&lt;D/C&gt;</a></div> -->
-    <div class="common_dronecode_menu_item large_version"><a href="https://mavlink.io/en/">MAVLink</a></div>
+    <div class="common_dronecode_menu_item"><a href="https://mavlink.io/en/">MAVLink</a></div>
     <div class="common_dronecode_menu_item large_version"><a href="https://www.dronecode.org/documentation/">Documentation</a></div>
     <div class="common_dronecode_menu_item small_version"><a href="https://www.dronecode.org/documentation/">Docs</a></div>
     <div class="common_dronecode_menu_item large_version"><a href="http://discuss.px4.io/">Support</a></div>
