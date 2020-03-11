@@ -10,7 +10,7 @@ Version: 1.1
 
 
 /* New menu bar 24px high at top of page.*/
-#common_dronecode_menu{position:fixed; /*height:24px;*/ top:0px; left:0px; width:100%; z-index:9999; background-color:black; margin: 0 auto; padding-top; font-size:14px;}
+#common_dronecode_menu{position:fixed; /*height:24px;*/ top:0px; left:0px; width:100%; z-index:9999; background-color:black; margin:0 auto; padding-top:0; font-size:14px;}
 
 .admin-bar #common_dronecode_menu, .logged-in.buddypress #common_dronecode_menu{top:32px}
 .admin-bar #common_dronecode_menu[data-permanent-transparent="1"], .logged-in.buddypress #common_dronecode_menu[data-permanent-transparent="1"]{top:32px}
